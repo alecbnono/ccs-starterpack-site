@@ -1,5 +1,11 @@
+import HeroSection from "../components/HeroSection";
+
 function LandingPage() {
-    return <></>;
+  return (
+    <div className="px-5">
+      <HeroSection />
+    </div>
+  );
 }
 
 export default LandingPage;

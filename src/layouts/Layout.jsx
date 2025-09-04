@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 function Layout() {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 font-(family-name:--font-body)">
       <Navbar />
       <main>
         <Outlet></Outlet>

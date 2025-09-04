@@ -14,9 +14,9 @@ function Navbar() {
   ];
 
   return (
-    <nav className="p-3 w-full">
+    <nav className="py-3 px-4 w-full">
       <div className="flex flex-row md:px-5 items-center justify-between w-full">
-        <h3 className="text-xl font-bold text-slate-50">
+        <h3 className="text-xl font-semibold text-slate-50">
           DLSU CCS Starterpack
         </h3>
 
