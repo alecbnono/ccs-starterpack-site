@@ -1,0 +1,329 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-heading: "League Spartan", sans-serif;
+  --font-body: "Inter 18pt", sans-serif;
+  --font-mono: "Fira Mono", sans-serif;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Black.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-SemiBold.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Medium.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Bold.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-ExtraBold.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Regular.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Light.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-Thin.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  src:
+    url("fonts/heading/LeagueSpartan-ExtraLight.woff2") format("woff2"),
+    url("fonts/heading/LeagueSpartan-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Bold.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-BlackItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Black.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-BoldItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-ExtraBold.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-ExtraBoldItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-ExtraLight.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Italic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-MediumItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Light.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Medium.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-LightItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Regular.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-ThinItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-SemiBold.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-SemiBoldItalic.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src:
+    url("fonts/body/Inter18pt-Thin.woff2") format("woff2"),
+    url("fonts/body/Inter18pt-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src:
+    url("fonts/mono/FiraCode-Bold.woff2") format("woff2"),
+    url("fonts/mono/FiraCode-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src:
+    url("fonts/mono/FiraCode-Medium.woff2") format("woff2"),
+    url("fonts/mono/FiraCode-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src:
+    url("fonts/mono/FiraCode-Light.woff2") format("woff2"),
+    url("fonts/mono/FiraCode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src:
+    url("fonts/mono/FiraCode-Regular.woff2") format("woff2"),
+    url("fonts/mono/FiraCode-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src:
+    url("fonts/mono/FiraCode-SemiBold.woff2") format("woff2"),
+    url("fonts/mono/FiraCode-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
